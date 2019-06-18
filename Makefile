@@ -176,7 +176,7 @@ clean:
 	$(Q)rm -fr $(builddir) $(gendir) $(docdir)
 
 .PHONY: install
-PREFIX ?= /usr/local
+PREFIX ?= /usr
 INSTALL ?= install
 INSTALLPREFIX = $(DESTDIR)$(PREFIX)
 install: $(libfirm_a) $(libfirm_dll)
