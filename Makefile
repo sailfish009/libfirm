@@ -52,7 +52,7 @@ CPPFLAGS  ?=
 PICFLAG   ?= -fPIC
 CFLAGS    += $(CFLAGS_$(variant)) -std=c99 $(PICFLAG) -DHAVE_FIRM_REVISION_H
 CFLAGS    += -Wall -W -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings
-LINKFLAGS += $(LINKFLAGS_$(variant)) -lm
+LINKFLAGS += $(LINKFLAGS_$(variant)) -lm -lwinmm -lregex
 VPATH = $(srcdir) $(gendir)
 
 all: firm
